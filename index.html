@@ -170,6 +170,57 @@
     
     
     <article
+  id="post-二战"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/11/21/%E4%BA%8C%E6%88%98/"
+    >二战</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/11/21/%E4%BA%8C%E6%88%98/" class="article-date">
+  <time datetime="2023-11-21T09:46:13.000Z" itemprop="datePublished">2023-11-21</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="二战"><a href="#二战" class="headerlink" title="二战"></a>二战</h1><hr>
+<ul>
+<li>题目:在攻防世界上找到的二星题目</li>
+</ul>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-第一次找flag"
   class="article article-type-post"
   itemscope
@@ -200,17 +251,16 @@
   <hr>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）"><a href="#在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）" class="headerlink" title="在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）"></a>在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）</h2><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>找到<strong>XOR.exe</strong>文件的<strong>flag</strong></p>
 <h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><ul>
-<li>1<br>用<strong>IDA</strong>打开<strong>XOR.exe</strong>，进入文件，找到<strong>format</strong>，</li>
-</ul>
-<p><img src="/images/31488ee46278d5da04c0ca86836e2708bcf35327015464e6726152f20994197f.png" alt="图 0">  </p>
-<ul>
-<li>2<br>再进入<strong>rcx</strong></li>
+<li><p>1<br>用<strong>IDA</strong>打开<strong>XOR.exe</strong>，进入文件，找到<strong>format</strong>，</p>
+</li>
+<li><p>2<br>再进入<strong>rcx</strong></p>
+</li>
 </ul>
 <p><img src="D:/nb666666/blog/source/_posts/第一次找flag/1.png" alt="title"></p>
 <ul>
 <li>3<br>按x进入，生成伪代码，</li>
 </ul>
-<p><img src="D:/nb666666/blog/source/_posts/assets/3.png" alt="title"></p>
+<p><img src="/!%5Btitle%5D(https:/github.com/lv163713/lv163713.github.io/blob/main/1.png)" alt="asd"></p>
 <ul>
 <li>4<br>进行代码审计，发现<strong>ens</strong>。 其中如果输入的值不等于<strong>ens ^0x39</strong>, 那么我们进入就ens，找到ens的值先对他取反就是<strong>flag</strong>！</li>
 </ul>
