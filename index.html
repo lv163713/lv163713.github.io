@@ -170,342 +170,327 @@
     
     
     <article
-  id="post-二战"
+  id="post-操作系统"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
   data-scroll-reveal
 >
   <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/11/21/%E4%BA%8C%E6%88%98/"
-    >二战</a> 
-</h2>
- 
-
-      
-    </header>
      
     <div class="article-meta">
-      <a href="/2023/11/21/%E4%BA%8C%E6%88%98/" class="article-date">
-  <time datetime="2023-11-21T09:46:13.000Z" itemprop="datePublished">2023-11-21</time>
+      <a href="/2024/07/03/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="article-date">
+  <time datetime="2024-07-03T07:48:03.265Z" itemprop="datePublished">2024-07-03</time>
 </a>    
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="二战"><a href="#二战" class="headerlink" title="二战"></a>二战</h1><hr>
-<ul>
-<li>题目:在攻防世界上找到的二星题目</li>
-</ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-第一次找flag"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/11/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%89%BEflag/"
-    >第一次找flag</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/11/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%89%BEflag/" class="article-date">
-  <time datetime="2023-11-02T11:21:09.000Z" itemprop="datePublished">2023-11-02</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <hr>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）"><a href="#在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）" class="headerlink" title="在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）"></a>在报网络空间安全之前，对这个行业了解并不多，在我认知里，就是打黑客，还赚钱。在之听了学长的讲解之后才明白网络空间安全有这么多学问。（一些专业术语听不懂就是了。）</h2><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>找到<strong>XOR.exe</strong>文件的<strong>flag</strong></p>
-<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><ul>
-<li><p>1<br>用<strong>IDA</strong>打开<strong>XOR.exe</strong>，进入文件，找到<strong>format</strong>，</p>
+  <h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><hr>
+<h2 id="操作系统的概念和功能"><a href="#操作系统的概念和功能" class="headerlink" title="操作系统的概念和功能"></a>操作系统的概念和功能</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li><p>负责协调软硬件资源</p>
 </li>
-<li><p>2<br>再进入<strong>rcx</strong></p>
+<li><p>为用户、程序提供服务</p>
+</li>
+<li><p>是一种系统软件</p>
 </li>
 </ul>
-<p><img src="D:/nb666666/blog/source/_posts/第一次找flag/1.png" alt="title"></p>
+<h3 id="功能和目标"><a href="#功能和目标" class="headerlink" title="功能和目标"></a>功能和目标</h3><h4 id="资源管理"><a href="#资源管理" class="headerlink" title="资源管理"></a>资源管理</h4><p>处理机管理、存储管理、文件管理、设备管理</p>
 <ul>
-<li>3<br>按x进入，生成伪代码，</li>
-</ul>
-<p><img src="/!%5Btitle%5D(https:/github.com/lv163713/lv163713.github.io/blob/main/1.png)" alt="asd"></p>
+<li><p>向上层提供服务</p>
+<p>给普通用户</p>
+</li>
+<li><ul>
+<li><p>GUI图形化界面</p>
+<p>命令接口</p>
 <ul>
-<li>4<br>进行代码审计，发现<strong>ens</strong>。 其中如果输入的值不等于<strong>ens ^0x39</strong>, 那么我们进入就ens，找到ens的值先对他取反就是<strong>flag</strong>！</li>
+<li><p>联机命令接口</p>
+</li>
+<li><p>脱机命令接口</p>
+<p>区别是单行执行和批处理</p>
+</li>
 </ul>
-<p><img src="D:/nb666666/blog/source/_posts/assets/4.png" alt="title"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="给软件-程序员使用"><a href="#给软件-程序员使用" class="headerlink" title="给软件&#x2F;程序员使用"></a>给软件&#x2F;程序员使用</h4><ul>
+<li>程序接口 (系统的调用)</li>
+</ul>
+<h2 id="操作系统的系统特征"><a href="#操作系统的系统特征" class="headerlink" title="操作系统的系统特征"></a>操作系统的系统特征</h2><p>并发和共享是操作系统的两个最基本的特征</p>
+<p>并发和共享互为存在条件，有共享就由并发，有并发就有共享（应该是这样）</p>
+<h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><ul>
+<li><p>指两个或多个事件在同一时间发生，<u><strong>宏观上</strong></u>是同时发生的，**<u>微观上</u>**是交替发生的</p>
+</li>
+<li><p>易混淆概念：</p>
+<p>并行：事件在同一时刻发生(多件事一起干)</p>
+</li>
+</ul>
+<p>注意：</p>
 <ul>
-<li>5<br>打个c语言，<strong>ens</strong></li>
+<li>单核cpu同一时刻只能运行一个程序，各个程序只能并发执行</li>
+<li>多核cpu同一时刻执行多个程序，多个程序可以并行执行（4核同时运行4个程序，要想多运行一个就要用到并发性）</li>
 </ul>
-<p><strong>flag</strong>：</p>
-<p><img src="D:/nb666666/blog/source/_posts/assets/5.png" alt="title"></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><hr>
+<h3 id="共享"><a href="#共享" class="headerlink" title="共享"></a>共享</h3><p>资源的共享，操作系统提供内存供给多个并发进程使用</p>
 <ul>
-<li>一开始什么都不会，不知道从哪里入手，在叶学长的指点下，才知道要用IDA去逆向（应该是叫逆向吧…）</li>
-<li>了解了IDA的操作</li>
-<li>体会到了找到flag时的乐趣</li>
-<li>虽然最后差了一个%c，没能喝到叶学长奶茶，不过还是很快乐的！！！</li>
+<li><p>互斥共享</p>
+<p>某些资源虽然可以供给多个进程，但同一时间只允许一个进程访问</p>
+<p>例如：qq和微信的视频，摄像头只能分配给一个进程</p>
+</li>
+<li><p>同时共享</p>
+<p>可以“同时”访问（这里的同时往往是指宏观上同时，微观上交替）</p>
+</li>
 </ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-111"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-     
-    <div class="article-meta">
-      <a href="/2023/11/02/111/" class="article-date">
-  <time datetime="2023-11-02T08:30:39.171Z" itemprop="datePublished">2023-11-02</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-   
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-markdown语法学习"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/11/02/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"
-    >markdown语法学习</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/11/02/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" class="article-date">
-  <time datetime="2023-11-02T03:55:08.000Z" itemprop="datePublished">2023-11-02</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p><em>这里是文字</em>倾斜<br>_这里是文字_倾斜<br><strong>这里是文字</strong>加粗<br><em><strong>这里是文字</strong></em>倾斜加粗<br><del>这里是文字</del>删除线<br>#标题<br>##标题1<br>###标题2</p>
-<p><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaL?ver=a12d" alt="插入网上图片"></p>
-<p>从这个链接学习的markdown语法<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u014061630/article/details/81359144?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169889286916800226510198%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=169889286916800226510198&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81359144-null-null.142%5Ev96%5Epc_search_result_base8&amp;utm_term=markdown%E8%AF%AD%E6%B3%95&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/u014061630/article/details/81359144?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169889286916800226510198%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=169889286916800226510198&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81359144-null-null.142^v96^pc_search_result_base8&amp;utm_term=markdown%E8%AF%AD%E6%B3%95&amp;spm=1018.2226.3001.4187</a></p>
-<hr>
-<blockquote>
-<p>这个是引用符号</p>
-<blockquote>
-<p>两个长这样</p>
-</blockquote>
-</blockquote>
-<p>*表示一个点</p>
-<p>写表格</p>
-<table>
-<thead>
-<tr>
-<th>学号</th>
-<th>姓名</th>
-<th>分数</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>小明</td>
-<td>男</td>
-<td>75</td>
-</tr>
-<tr>
-<td>·····</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>特殊符号对应网站<a target="_blank" rel="noopener" href="https://unicode-table.com/cn/">https://unicode-table.com/cn/</a></p>
-<img  src="图片的路径"  alt="对图片的解释说明"/>
-
-<p>.&#x2F; 当前文件路径 : 简单说就是与你现在正在编辑文件是在同一个文件夹中的，                     例：.&#x2F;tupian.png</p>
-<p>..&#x2F;上一级文件路径: 就是在目前编辑文件的上一级文件中,有几层写几层  例：..&#x2F;img&#x2F;tupian.png</p>
-<p>网络图片（未下载的）：在浏览器中打开图片，然后右键单击 ，选择复制图片路径，然后粘贴到&lt;img src &#x3D;” 图片路径”中然后渲染显示</p>
-<p>&lt;img  src&#x3D;” 图片路径”  alt&#x3D;”图片解释 “  width&#x3D;” 100”或者height&#x3D;”100 “&#x2F;&gt;</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-“ss”"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/10/31/%E2%80%9Css%E2%80%9D/"
-    >“first try”</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/10/31/%E2%80%9Css%E2%80%9D/" class="article-date">
-  <time datetime="2023-10-31T15:00:05.000Z" itemprop="datePublished">2023-10-31</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hello world<br>this is my first bolg<br>welcome to visit <strong>fitst try</strong><br>I will learn how to use markdown gramer to write blog<br>#标题<br>##标题1<br>###标题2</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-hello-world"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/10/31/hello-world/"
-    >Hello World</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/10/31/hello-world/" class="article-date">
-  <time datetime="2023-10-31T14:47:32.021Z" itemprop="datePublished">2023-10-31</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="虚拟"><a href="#虚拟" class="headerlink" title="虚拟"></a>虚拟</h3><p>表现为把一个物理实体转变为若干个逻辑实体</p>
+<ul>
+<li><strong>时分复用技术</strong>：资源在时间上进行复用，不同程序并发使用，cpu在交替为各个进程服务</li>
+<li><strong>空分复用技术</strong>：用来实现虚拟磁盘（物理磁盘虚拟为逻辑磁盘，电脑上的C盘、D盘等）、虚拟内存（在逻辑上扩大程序的存储容量）等，提高资源的利用率，提高编程效率。</li>
+</ul>
+<h3 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h3><ul>
+<li>在多道程序环境下，允许多个进程并发执行，但由于资源等因素的限制，使进程的执行以“停停走走”的方式运行，而且每个进程<strong>执行的情况</strong>（运行、暂停、速度、完成）也是<strong>未知的</strong>。</li>
+</ul>
+<h2 id="操作系统历史"><a href="#操作系统历史" class="headerlink" title="操作系统历史"></a>操作系统历史</h2><h3 id="无操作系统的计算机"><a href="#无操作系统的计算机" class="headerlink" title="无操作系统的计算机"></a>无操作系统的计算机</h3><ul>
+<li><p>人工操作</p>
+<p>输入纸带，打孔表示1，人工操作方式严重降低了计算机资源的利用率，此即所谓的人机矛盾。随着 CPU 速度的提高和系统规模的扩大，人机矛盾变得日趋严重</p>
+<p><img src="https://img-blog.csdnimg.cn/direct/ef867956ab22473592e71360b51979ea.png" alt="img"></p>
+</li>
+</ul>
+<h3 id="脱机输入输出方式"><a href="#脱机输入输出方式" class="headerlink" title="脱机输入输出方式"></a>脱机输入输出方式</h3><ul>
+<li><p>单道批处理系统</p>
+<p>引入了一台外围机（内有一个监督程序，负责输入数据，操作系统的雏形），把纸带的数据输入到磁带上，当cpu需要数据时从磁带上高速的调入内存</p>
+<p>优点：</p>
+<ul>
+<li>不用装卡带，减少cpu空闲时间。</li>
+<li>从高速磁带或磁盘上输入数据，减少cpu空闲时间</li>
+</ul>
+</li>
+<li><p>多道批处理系统</p>
+<p>用户所提交的作业都先存放在外存上并排成一个队列，称为“后备 队列”；然后，由作业调度程序按一定的算法从后备队列中选择若干个作业调入内存，使它们共享 CPU 和系统中的各种资源。</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/direct/7eba2a98ea2e42e2b13efa0c95cf8d5a.png" alt="img"></p>
+<p>多道批处理系统的优缺点</p>
+<p>(1) 资源利用率高。由于在内存中驻留了多道程序，它们共享资源，可保持资源处于忙 碌状态，从而使各种资源得以充分利用。</p>
+<p>(2) 系统吞吐量大。系统吞吐量是指系统在单位时间内所完成的总工作量。能提高系统吞吐量的主要原因可归结为：第一，CPU 和其它资源保持“忙碌”状态； 第二，仅当作业 完成时或运行不下去时才进行切换，系统开销小。</p>
+<p>(3) 平均周转时间长。作业的周转时间是指从作业进入系统开始，直至其完成并退出系 统为止所经历的时间。在批处理系统中，由于作业要排队，依次进行处理，因而作业的周转时间较长，通常需几个小时，甚至几天。</p>
+<p>(4) 无交互能力。用户一旦把作业提交给系统后，直至作业完成，用户都不能与自己的作业进行交互，这对修改和调试程序是极不方便的 </p>
+<h3 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3><p>(1) 多路性。允许在一台主机上同时联接多台联机终端，系统按分时原则为每个用户服务。宏观上，是多个用户同时工作，共享系统资源；而微观上，则是每个用户作业轮流运 行一个时间片。多路性即同时性，它提高了资源利用率，降低了使用费用，从而促进了计 算机更广泛的应用。 </p>
+<p>(2) 独立性。每个用户各占一个终端，彼此独立操作，互不干扰。因此，用户所感觉到 的，就像是他一人独占主机。</p>
+<p>(3) 及时性。用户的请求能在很短的时间内获得响应。此时间间隔是以人们所能接受的 等待时间来确定的，通常仅为 1～3 秒钟。</p>
+<p>(4) 交互性。用户可通过终端与系统进行广泛的人机对话。其广泛性表现在：用户可以 请求系统提供多方面的服务，如文件编辑、数据处理和资源共享等。</p>
+<h3 id="实时系统"><a href="#实时系统" class="headerlink" title="实时系统"></a>实时系统</h3><p>为了及时响应紧急的需求</p>
+<ul>
+<li><p>按任务执行时是否呈现周期性来划分</p>
+<p>周期性实时任务。外部设备周期性地发出激励信号给计算机，     要求它按指定周期循环执行，以便周期性地控制某外部设备。 </p>
+<p>非周期性实时任务。外部设备所发出的激励信号并无明显的周期性，但都必须联系 着一个截止时间(Deadline)。它又可分为开始截止时间(某任务在某时间以前必须开始执行) 和完成截止时间(某任务在某时间以前必须完成)两部分。</p>
+</li>
+<li><p>根据对截止时间的要求来划分</p>
+<p>硬实时任务(Hard real-time Task)。系统必须满足任务对截止时间的要求，否则可能 出现难以预测的结果。 </p>
+<p>软实时任务(Soft real-time Task)。它也联系着一个截止时间，但并不严格，若偶尔错过了任务的截止时间，对系统产生的影响也不会太大。</p>
+</li>
+</ul>
+<h2 id="操作系统的运行机制"><a href="#操作系统的运行机制" class="headerlink" title="操作系统的运行机制"></a>操作系统的运行机制</h2><ul>
+<li><p>指令</p>
+<p>注意区分ls cd等指令,这是交互接口的指令</p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/direct/d0357bb4adcb4e7e9f739d450691b330.png" alt="img"></p>
+<ul>
+<li><p>cup</p>
+<p><img src="https://img-blog.csdnimg.cn/direct/0faccc8e67884a41ac7eb1b6792c72cb.png" alt="img"></p>
+</li>
+<li><p>程序</p>
+<p><img src="https://img-blog.csdnimg.cn/direct/c037e340ce9e4374859da7407976b500.png" alt="img"></p>
+</li>
+</ul>
+<h3 id="操作系统的内核"><a href="#操作系统的内核" class="headerlink" title="操作系统的内核"></a>操作系统的内核</h3><p>由于内核划分功能的不同，内核分为大内核和微内核。</p>
+<p><img src="https://img-blog.csdnimg.cn/direct/719409632d444b02acd3f65255e01da4.png" alt="img"></p>
+<p>大内核和微内核的优缺点</p>
+<p>类比:</p>
+<p>操作系统的体系结构问题与企业的管理问题很相似。</p>
+<p>内核就是企业的管理层，负责一些重要的工作。只有管理层才能执行特权指令，普通员工只能执行非特权指令。用户态、核心态之间的切换相当于普通员工和管理层之间的工作交接</p>
+<p>大内核:企业初创时体量不大，管理层的人会负责大部分的事情。优点是效率高;缺点是组织结构混乱，难以维护。</p>
+<p>微内核:随着企业体量越来越大，管理层只负责最核心的一些工作。优点是组织结构清晰，方便维护;缺点是效率低。</p>
+<h4 id="区分"><a href="#区分" class="headerlink" title="区分"></a>区分</h4><p>那么cpu是如何进行应用程序和操作系统指令的区分呢?</p>
+<p>cpu有两种状态一种的内核态（管态）另一种是用户态（目态）</p>
+<p>有一个专门的寄存器,<strong>程序状态寄存器(PSW)</strong>,其中有两个二进制位，1表示“内核态”，0表示“用户态”</p>
+<h2 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h2><h3 id="概念和作用"><a href="#概念和作用" class="headerlink" title="概念和作用"></a>概念和作用</h3><p>发生异常，要处理异常，处理完后返回被暂停的程序重新执行</p>
+<p>当中断发生时，CPU立即进入核心态</p>
+<p>当中断发生后，当前运行的进程暂停运行，并由操作系统内核对中断进行处理。</p>
+<p>对于不同的中断信号，会进行不同的处理。</p>
+<p>有了中断，才能实现多道程序并发执行。</p>
+<p>“用户态→核心态”是通过中断实现的，并且中断是唯一途径。</p>
+<p>有内中断和外中断</p>
+<p><img src="https://img-blog.csdnimg.cn/direct/b51247e464414fecb499d079e68841c9.png" alt="img"></p>
+<ul>
+<li>程序的中断，库函数和中断指令的区别</li>
+</ul>
+<p>编程语言（c,java）中里边有很多库函数，其实它们（不是所有的库函数）就是将系统调用封装起来，隐藏一些细节，使上层进行系统调用更加方便。</p>
+<p>当有程序想要操作系统为程序服务时，会执行陷入指令，处理内中断，使用户进入内核态</p>
+<h3 id="内中断"><a href="#内中断" class="headerlink" title="内中断"></a>内中断</h3><p><img src="https://github.com/lv163713/image/blob/main/%E7%B3%BB%E7%BB%9F0001%20(4).png" alt="img"></p>
+<h3 id="外中断"><a href="#外中断" class="headerlink" title="外中断"></a>外中断</h3><p>时钟中断</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701153009451.png" alt="image-20240701153009451"></p>
+<h3 id="中断处理的基本原理"><a href="#中断处理的基本原理" class="headerlink" title="中断处理的基本原理"></a>中断处理的基本原理</h3><p>和汇编语言的int中断一样，根据不同的中断信号，找到中断向量表，后再找到对应的代码区处理中断，这些程序都是内核程序</p>
+<h2 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
+<li>操作系统为程序向上提供一些接口，简单易用的服务</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701155841148.png" alt="image-20240701155841148"></p>
+<ul>
+<li>系统调用的分类</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701160159373.png" alt="image-20240701160159373"></p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701160836676.png" alt="image-20240701160836676"></p>
+<h2 id="操作系统的体系结构"><a href="#操作系统的体系结构" class="headerlink" title="操作系统的体系结构"></a>操作系统的体系结构</h2><ul>
+<li>大体结构</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701161513450.png" alt="image-20240701161513450"></p>
+<h3 id="大内核和小内核"><a href="#大内核和小内核" class="headerlink" title="大内核和小内核"></a>大内核和小内核</h3><p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701161858346.png" alt="image-20240701161858346"></p>
+<h3 id="其他结构"><a href="#其他结构" class="headerlink" title="其他结构"></a>其他结构</h3><p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701162007760.png" alt="image-20240701162007760"></p>
+<h2 id="操作系统引导"><a href="#操作系统引导" class="headerlink" title="操作系统引导"></a>操作系统引导</h2><p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701183703304.png" alt="image-20240701183703304"></p>
+<p>开机通电-&gt;找到ROM中的BIOS的引导程序-&gt;引导找到磁盘中的MBR,加载到cpu-&gt;MBR找到c盘-&gt;c盘中找到启动管理器,加载到cpu-&gt;找到根目录,加载到cpu-&gt;完成操作系统初始化</p>
+<h2 id="虚拟机"><a href="#虚拟机" class="headerlink" title="虚拟机"></a>虚拟机</h2><ul>
+<li>两类不同的虚拟机</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701184529293.png" alt="image-20240701184529293"></p>
+<ul>
+<li>对比</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240701184723220.png" alt="image-20240701184723220"></p>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><h3 id="概念、组成、特征"><a href="#概念、组成、特征" class="headerlink" title="概念、组成、特征"></a>概念、组成、特征</h3><hr>
+<p>程序和进程的区分，程序是代码，是.exe文件在内存中还没有被执行，而进程就是被执行的代码</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703203043130.png" alt="image-20240703203043130"></p>
+<p>每一个进程都会分配一个可<strong>唯一、不重复</strong>的PID（Process ID），剩下的信息存在PCB中</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703204444632.png" alt="image-20240703204444632"></p>
+<p>PCB的结构</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703204533196.png" alt="image-20240703204533196"></p>
+<ul>
+<li>一个完整的进程由<strong>PCB</strong>、<strong>代码段</strong>、<strong>数据段</strong>、组成。PCB中有一个变量state来储存进程当前状态</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703205426922.png" alt="image-20240703205426922"></p>
+<h3 id="进程的状态和转化"><a href="#进程的状态和转化" class="headerlink" title="进程的状态和转化"></a>进程的状态和转化</h3><hr>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703205544552.png" alt="image-20240703205544552"></p>
+<ul>
+<li>创建态 -&gt; 就是创建这个PCB进程</li>
+<li>就绪态 -&gt; CPU没空,等待分配CPU进行执行</li>
+<li>运行态 -&gt; 就是这个进程在执行</li>
+<li>阻塞态 -&gt; 进程在请求的操作没办法被执行的时候，就会进入阻塞态，让就绪态的进程进入CPU</li>
+<li>终止态 -&gt; 进程执行exit的系统调用,操作系统进行善后处理,回收空间</li>
+<li><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703210537847.png" alt="image-20240703210537847"></li>
+</ul>
+<p>注:如果是单核CPU,同一时刻就只有一个进程处在运行态,多核情况,就有多个CPU处在运行态</p>
+<h4 id="进程的组织方式"><a href="#进程的组织方式" class="headerlink" title="进程的组织方式"></a>进程的组织方式</h4><hr>
+<ul>
+<li>用链队列来组织</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703210929415.png" alt="image-20240703210929415"></p>
+<ul>
+<li>索引方式</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703211031149.png" alt="image-20240703211031149"></p>
+<p>大部分用的都是链队列</p>
+<h3 id="进程的控制"><a href="#进程的控制" class="headerlink" title="进程的控制"></a>进程的控制</h3><hr>
+<p>说白了就是实现进程的状态转化（用原语来实现，原语的执行具有原子性，一气呵成，不会被终止）</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703211200098.png" alt="image-20240703211200098"></p>
+<p>之所以要用原语，是因为如果在进行状态转换的过程中，发生了终止条件，就会导致操作系统中的某些关键数据结构信息不统一的情况，影响操纵系统的管理</p>
+<ul>
+<li>原语的实现</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703212141232.png" alt="image-20240703212141232"></p>
+<p>剩下的还有阻塞原语，切换原语等，和汇编的CALL指令差不多，就不展开写了</p>
+<h3 id="进程的通信"><a href="#进程的通信" class="headerlink" title="进程的通信"></a>进程的通信</h3><hr>
+<ul>
+<li>什么是进程的通信</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703214306357.png" alt="image-20240703214306357"></p>
+<p>因为各个进程相互独立，所以通信时需要操作系统的支持</p>
+<p>有三种方式</p>
+<ul>
+<li>共享存储</li>
+</ul>
+<p>就是共享一段相同的内存，通过虚拟地址存储空间映射到原本的数据段，要保证存储的访问是互斥的</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703215525771.png" alt="image-20240703215525771"></p>
+<ul>
+<li><p>消息传递</p>
+<p>直接消息传递</p>
+<p>借助操作系统的原语句来进行</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703221148833.png" alt="image-20240703221148833"></p>
+<p>间接消息传递（信箱通信方式）</p>
+</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240703224021369.png" alt="image-20240703224021369"></p>
+<ul>
+<li>管道通信</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704002718198.png" alt="image-20240704002718198"></p>
+<ul>
+<li>通信知识点总结</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704003514306.png" alt="image-20240704003514306"></p>
+<h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><hr>
+<p>在引入线程之后，进程被细分了，可以同时做多件事情，在进程中这些都是并发进行的，且进程只做为除了CPU之外的系统资源分配单元（如分配打印机，地址空间等）。线程是程序执行流的最小的单元，调度的基本单位。</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704201308131.png" alt="image-20240704201308131"></p>
+<ul>
+<li>变化</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704201825283.png" alt="image-20240704201825283"></p>
+<h4 id="线程的实现方式和模型"><a href="#线程的实现方式和模型" class="headerlink" title="线程的实现方式和模型"></a>线程的实现方式和模型</h4><hr>
+<ul>
+<li><p>方式</p>
+</li>
+<li><p>用户级线程</p>
+</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704203212244.png" alt="image-20240704203212244"></p>
+<ul>
+<li>内核级线程</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704203420505.png" alt="image-20240704203420505"></p>
+<ul>
+<li><p>模型</p>
+</li>
+<li><p>一对一</p>
+</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704203619683.png" alt="image-20240704203619683"></p>
+<ul>
+<li>多对一</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704203657402.png" alt="image-20240704203657402"></p>
+<ul>
+<li>多对多</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704203822209.png" alt="image-20240704203822209"></p>
+<h4 id="线程的转态和转化"><a href="#线程的转态和转化" class="headerlink" title="线程的转态和转化"></a>线程的转态和转化</h4><hr>
+<p>和进程的状态与转换一样的</p>
+<h4 id="线程的组织与控制"><a href="#线程的组织与控制" class="headerlink" title="线程的组织与控制"></a>线程的组织与控制</h4><hr>
+<p>进程叫PCB，线程叫TCB，其他差不多</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704204332254.png" alt="image-20240704204332254"></p>
+<h2 id="调度"><a href="#调度" class="headerlink" title="调度"></a>调度</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>就是调整进程进CPU的顺序</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704205254255.png" alt="image-20240704205254255"></p>
+<h3 id="调度的三个层次"><a href="#调度的三个层次" class="headerlink" title="调度的三个层次"></a>调度的三个层次</h3><ul>
+<li>作业(高级)调度 -&gt; 调度作业</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704205735144.png" alt="image-20240704205735144"></p>
+<ul>
+<li>内存(中级)调度 -&gt; 调度挂起队列</li>
+</ul>
+<p>选择进程知否要交继续执行,还是要保存到挂起队列</p>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704210123021.png" alt="image-20240704210123021"></p>
+<ul>
+<li>进程(低级)调度 -&gt; 调度进程</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704205902587.png" alt="image-20240704205902587"></p>
+<ul>
+<li>对比</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704210453179.png" alt="image-20240704210453179"></p>
+<h3 id="挂起与七状态模型"><a href="#挂起与七状态模型" class="headerlink" title="挂起与七状态模型"></a>挂起与七状态模型</h3><p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704210407477.png" alt="image-20240704210407477"></p>
+<h3 id="调度的时机、切换过程、方式"><a href="#调度的时机、切换过程、方式" class="headerlink" title="调度的时机、切换过程、方式"></a>调度的时机、切换过程、方式</h3><hr>
+<ul>
+<li>时机</li>
+</ul>
+<p><img src="C:\Users\16371\AppData\Roaming\Typora\typora-user-images\image-20240704211050022.png" alt="image-20240704211050022"></p>
+<h1 id="作者："><a href="#作者：" class="headerlink" title="作者："></a>作者：</h1><p>BY：<strong>wawo16</strong> </p>
  
       <!-- reward -->
       
@@ -537,7 +522,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2023
+        2015-2024
         <i class="ri-heart-fill heart_icon"></i> John Doe
       </li>
     </ul>
